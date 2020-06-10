@@ -1,0 +1,17 @@
+﻿@model FamilyPhotos.ViewModel.PhotoViewModel
+
+@{
+    ViewData["Title"] = "Kép törlése";
+}
+
+<h2>Kép törlése</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.Id)
+    @Html.DisplayForModel()
+
+    <div>
+        <input type="submit" value="Törlés" />
+    </div>
+}
